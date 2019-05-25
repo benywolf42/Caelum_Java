@@ -20,10 +20,17 @@ class ExerciciosExtras {
         // }
      // ===========================================
         // EXERCICIO 4
+        // int n = 3;
         int fatorial = 1;
-        for (int n = 1; n <= 10; n++) {
-
-            System.out.println("O fatorial de " + n + " é: " + fatorial);
+        String s = "";
+        for (int n = 15; n >= 1; n--) {
+            fatorial *= n;
+            if (n == 1) {
+                s += n;
+            } else if (n > 1) {
+                s += n + " x ";
+            }
         }
+        System.out.println(s + " = " + fatorial);
     }
 }
