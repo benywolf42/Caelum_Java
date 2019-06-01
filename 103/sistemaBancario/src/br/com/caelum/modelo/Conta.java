@@ -1,6 +1,7 @@
-package br.com.caelum.modelo;
+	package br.com.caelum.modelo;
 
 public class Conta {
+	
     private String titular;
     private int numero;
     private String agencia;
