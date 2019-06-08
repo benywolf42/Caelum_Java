@@ -1,4 +1,4 @@
-package br.com.caelum.modelo;
+package br.com.caelum.cargos;
 
 public class Gerente extends Funcionario{
 

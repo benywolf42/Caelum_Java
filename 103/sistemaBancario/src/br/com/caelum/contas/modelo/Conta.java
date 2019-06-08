@@ -1,6 +1,6 @@
 	package br.com.caelum.contas.modelo;
 
-public class Conta {
+public abstract class Conta {
 	
     private String titular;
     private int numero;
@@ -45,13 +45,15 @@ public class Conta {
         this.saldo += valor;
     }
 
-    public String getTipo() {
-    	return "Conta";
-    }
+    public abstract String getTipo();
 
     public void transfere(double valor, Conta conta) {
 		this.saca(valor);
 		conta.deposita(valor);
 	}
+    
+    public String testeDeMetodoAbstrato() {
+    	return this.getTipo();
+    }
 
 }
